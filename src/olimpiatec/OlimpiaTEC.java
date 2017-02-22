@@ -15,7 +15,30 @@ public class OlimpiaTEC {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+ Student leonn = new Student("Leon", "D10S","ITIC");
+        Student jaime = new Student("Jaime","A00821432","IFI");
+        Student esteban = new Student("Esteban","A01410412","Pendejo");
+        Sport handball = new Sport("Handball");
+        Sport cagar = new Sport("Cagar");
+        Team i = new Team("Ingenieros");
+        Team l = new Team("Licenciados");
+        Team p1 = new Team("Prepa - 1er Sem");
+        Team p3 = new Team("Prepa - 3er Sem");
+        Team p5 = new Team("Prepa - 5to Sem");
+      
+        cagar.addStudent(leonn);
+        handball.addStudent(jaime);
+        cagar.addStudent(esteban);
+       
+        System.out.println(cagar);
+        System.out.println(handball);
+        System.out.println(i);
+        System.out.println(l);
+        System.out.println(p1);
+        System.out.println(p3);
+        System.out.println(p5);
+ 
+ 
     }
     
 }
